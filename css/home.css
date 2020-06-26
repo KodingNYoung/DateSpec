@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Quicksand&family=Sacramento&display=swap');
+
+
+.page-content {
+    width: 80%;
+    max-width: 500px;
+    height:50vh;
+    margin: 0 50px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page-content .content-heading {
+    text-transform: capitalize;
+    font-size: 4rem;
+    font-family: 'Patua One', cursive;
+    display: flex;
+    flex-direction: column;
+}
+.page-content .content-heading .pink {
+    color: #FFC0CB;
+}
+.page-content .content-body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+.register-link{
+    margin:10px 0;
+}
+.register-link .register{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+}
+@media screen and (max-width: 464px) {
+    .page-content {
+        margin: 0 25px;
+    }
+    .page-content .content-heading {
+        font-size: 2.5rem;
+    }
+    .page-content .content-body{
+        font-size: 1.2rem;
+    }
+}
