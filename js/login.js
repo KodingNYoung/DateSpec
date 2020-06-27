@@ -16,7 +16,7 @@ document.getElementById('login-btn').addEventListener("click",async (e) => {
 
     // check if the username and password matches any of the inputted one
     users.forEach(user => {
-        if( user.username === usernameUI && user.password === passwordUI){
+        if((user.username.toLowerCase() === usernameUI.toLowerCase() && user.password === passwordUI) ||user.email.toLowerCase() === usernameUI.toLowerCase() && user.password === passwordUI){
             // login
             isValid = true;
         }
