@@ -68,7 +68,7 @@ header {
 .registration-invite a:hover {
     text-decoration: underline;
 }
-.login-form input[type="button"] {
+.login-form input[type="submit"] {
     background-color: var(--subtheme-color);
     border: 0;
     border-radius: 3px;
