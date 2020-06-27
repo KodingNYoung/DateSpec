@@ -17,6 +17,13 @@ heading -> FFC0CB
 html{
     font-size: 10px;
 }
+:root {
+    --theme-color: #FF8BA0;
+    --subtheme-color: #FA4264;
+    --links-and-buttons: #FA4264;
+    --texts: #FFC0CB;
+
+}
 
 /* header region */
 header{
@@ -28,20 +35,19 @@ header{
 }
 header .logo h1 {
     font-family: 'Sacramento', cursive;
-    color: #FF8BA0;
+    color: var(--theme-color);
 }
 .sign {
-    background-color: #FA4264;
+    background-color: var(--links-and-buttons);
     transition: background-color 0.3s linear;
     text-transform: uppercase;
     margin: 0 10px;
     padding: 10px;
-    transition: color 0.3s linear;
     color: #fff;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     border-radius: 3px;
 }
 .sign:hover {
-    background-color: #F8607C;
+    background-color: var(--theme-color);
 }

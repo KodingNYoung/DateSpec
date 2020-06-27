@@ -8,7 +8,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* backdrop-filter: blur(3px); */
     color: white;
 }
 
@@ -17,7 +16,6 @@ body{
     max-width: 500px;
     height:50vh;
     margin: 0 50px;
-    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +28,7 @@ body{
     flex-direction: column;
 }
 .page-content .content-heading .pink {
-    color: #FFC0CB;
+    color:  var(--texts);
 }
 .page-content .content-body{
     font-family: 'Quicksand', sans-serif;
