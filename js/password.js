@@ -46,7 +46,7 @@ const getUsers = () => {
     let emails= [];
 
     // fetch the date from the json file
-    return fetch("/data/users.json")
+    return fetch("../data/users.json")
     
         // get response
         .then(res => res.json())
