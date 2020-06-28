@@ -37,17 +37,19 @@
         <div class="background"><img src="../img/heart.svg"></div>
         <div class="background4"><img src="../img/heart.svg"></div>
             <!-- input form -->
-            <form class="login-form" id="login-form" action="profile.html"method="unset">
+            <form class="login-form" id="login-form" action="profile.html" method="get" autocomplete="off">
                 <!-- username -->
                 <div class="form-group">
                     <label for="email-username">Username or Email</label>
-                    <input type="text" id="email-username" name="username" required>
+                    <input type="text" id="email-username" name="username" required/>
                 </div>
+
                 <!-- password -->
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
+
                 <!-- before the button -->
                 <div class="row">
                     <div class="col check-group">
@@ -56,8 +58,9 @@
                     </div>
                     <a href="../pages/forgot-password.html" class= "col retrieve-account">Forgot password?</a>
                 </div>
+
                 <!-- button -->
-                <input type="submit" value="Login" id="login-btn">
+                <button type="submit" id="login-btn">Login</button>
             </form>
         
             <div class="background2"><img src="../img/heart.svg"></div>
@@ -72,6 +75,7 @@
 
 
     <!-- <script src="../js/event.js"></script> -->
+    <script src="../js/users.js"></script>
     <script src="../js/login.js"></script>
 </body>
 </html>

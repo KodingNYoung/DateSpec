@@ -36,7 +36,7 @@ header {
     padding: 10px 0;
     font-weight: bolder;
 }
-.login-form input {
+.login-form input, button {
     padding: 10px;
     font-size: 1.7rem;
     background-color: transparent;
@@ -68,7 +68,7 @@ header {
 .registration-invite a:hover {
     text-decoration: underline;
 }
-.login-form input[type="submit"] {
+.login-form button {
     background-color: var(--subtheme-color);
     border: 0;
     border-radius: 3px;
@@ -77,7 +77,7 @@ header {
     cursor: pointer;
     transition: background-color 0.3s linear;
 }
-.login-form input[type="button"]:hover {
+.login-form button:hover {
     background-color: var(--theme-color);
 } 
 .registration-invite {
