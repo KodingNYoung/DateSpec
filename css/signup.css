@@ -41,7 +41,8 @@ header {
     padding: 10px 0;
     font-weight: bolder;
 }
-.login-form input {
+.login-form input.w100,
+.login-form select {
     padding: 10px;
     font-size: 1.7rem;
     background-color: transparent;
