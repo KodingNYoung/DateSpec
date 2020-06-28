@@ -9,32 +9,46 @@
 </head>
 <body>
     <header>
+         <!-- logo -->
         <div class="logo">
             <h1>DateSpec</h1>
         </div>
+        <!-- nav links -->
         <nav class="nav-links">
             <a href="../index.html" class="sign home">Home</a>
         </nav>
     </header>
+    <!-- main page -->
     <main class="page-content">
         <div class="background3">
             <img src="../img/heart.svg">
         </div>
+        <!-- page heading -->
         <h2 class="content-heading">
             Account Login
         </h2>
+        <!-- preloader/message -->
+        <div class="message">
+            <img class="preloader" src="../img/preloader.gif">
+            <!-- <p class="error">
+                Please, enter your username and password
+            </p> -->
+        </div>
         <div class="background"><img src="../img/heart.svg"></div>
         <div class="background4"><img src="../img/heart.svg"></div>
+            <!-- input form -->
             <form class="login-form" id="login-form" action="profile.html"method="unset">
-                <!--  -->
+                <!-- username -->
                 <div class="form-group">
                     <label for="email-username">Username or Email</label>
                     <input type="text" id="email-username" name="username" required>
                 </div>
+                <!-- password -->
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
+                <!-- before the button -->
                 <div class="row">
                     <div class="col check-group">
                         <input type="checkbox" name="remember-me" id="remember-me">
@@ -42,10 +56,12 @@
                     </div>
                     <a href="../pages/forgot-password.html" class= "col retrieve-account">Forgot password?</a>
                 </div>
+                <!-- button -->
                 <input type="submit" value="Login" id="login-btn">
             </form>
         
             <div class="background2"><img src="../img/heart.svg"></div>
+        <!-- registration invite -->
         <div class="registration-invite">
             <p>Don't have an account? <a href="signup.html">Register</a></p>
         </div>

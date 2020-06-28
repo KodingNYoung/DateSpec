@@ -49,24 +49,27 @@ header {
     border-radius: 3px;
     width: 100%;
 }
-.login-form .row {
+.login-form .check-group {
     margin: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    align-items: center;
 }
-#remember-me {
+#agreement {
     width: fit-content;
+    margin-right:5px;
 }
-.login-form .row a,
-.registration-invite a {
+.login-form .check-group a,
+.login-invite a{
     color:#FA4264;
     text-decoration: none;
     font-weight: bolder;
 }
-.login-form .row a:hover,
-.registration-invite a:hover {
+.login-form .check-group a:hover,
+.login-invite a:hover{
     text-decoration: underline;
 }
+
 .login-form input[type="submit"] {
     background-color: #FA4264;
     border: 0;
@@ -79,8 +82,8 @@ header {
 .login-form input[type="submit"]:hover {
     background-color: #FF8BA0;
 } 
-.registration-invite {
-    text-align: right;
+.login-invite {
+    text-align: center;
     margin: 10px 0;
 }
 

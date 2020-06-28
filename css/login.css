@@ -167,3 +167,18 @@ img{
         transform: translateX(-1000%) translateY(-700%);  
     }
 }
+
+/* js classes */
+.message img{
+    width: 25px;
+    display: none;
+}
+.message {
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
