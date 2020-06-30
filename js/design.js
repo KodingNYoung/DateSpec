@@ -1,4 +1,3 @@
-alert("hey!")
 const positionHearts = () => {
     // to position the hearts to random places
     // first get the inner dimension of the window
@@ -9,24 +8,29 @@ const positionHearts = () => {
     const hearts = document.querySelectorAll(".heart");
     // get a random number
     const randomNum = (width, height) => {
-    // random X and Y
-    const posX= Math.floor(Math.random()*width);
-    const posY = Math.floor(Math.random()*height);
-    return [posX, posY]
+        // random X and Y
+        let posX= Math.floor(Math.random()*width);
+        let posY = Math.floor(Math.random()*height);
+
+        // prevent the hearts from appearing on the header
+        do {
+            // posX= Math.floor(Math.random()*width);
+            posY = Math.floor(Math.random()*height);
+        }
+        while (posY < 80)
+
+        return [posX, posY]
     }
 
     // position the 
     const position = (heart, [width, height]) => {
-    heart.style.transform = `translateX(${width}px) translateY(${height}px)`;
-    // console.log(heart, width, height);
+        heart.style.transform = `translateX(${width}px) translateY(${height}px)`;
+        // console.log(heart, width, height);
     }
     // position the heart with the 
     hearts.forEach(heart => {
-    position(heart, randomNum(width, height));
+        position(heart, randomNum(width, height));
     })
-
-    // console.log(randomNum(width, height), hearts);
-    // console.log(randomNum(width, height));
 }
 // create hearts
 const createHearts = () => {
