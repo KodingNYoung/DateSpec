@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/design.css">
     <link rel="stylesheet" href="../css/signup.css">
     <title>Register | DateSpec</title>
 </head>
@@ -16,73 +17,73 @@
             <a href="../index.html" class="sign home">Home</a>
         </nav>
     </header>
-        <main class="page-content">
-            <h2 class="content-heading">
-                Register
-            </h2>
+    <main class="page-content">
+        <h2 class="content-heading">
+            Register
+        </h2>
+        
+        <form class="login-form">
+            <!-- firstname -->
+            <div class="form-group">
+                <label for="firstname">First name</label>
+                <input type="text" class="w100" id="firstname" >
+            </div>
+            <!-- lastname -->
+            <div class="form-group">
+                <label for="lastname">Last name</label>
+                <input type="text" class="w100" id="othernames" >
+            </div>
+            <!-- gender -->
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <!-- relationship status -->
+            <div class="form-group">
+                <label for="status">Relationship Status</label>
+                <select name="status" id="status">
+                    <option value="single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                </select>
+            </div>
+            <!-- username -->
+            <div class="form-group">
+                <label for="username">Username </label>
+                <input type="text" id="username" class="w100">
+            </div>
+                <!-- Email -->
+                <div class="form-group">
+                <label for="email"> Email</label>
+                <input type="email" id="email" class="w100">
+            </div>
+            <!-- password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="w100">
+            </div>
             
-            <form class="login-form">
-                <!-- firstname -->
-                <div class="form-group">
-                    <label for="firstname">First name</label>
-                    <input type="text" class="w100" id="firstname" >
-                </div>
-                <!-- lastname -->
-                <div class="form-group">
-                    <label for="lastname">Last name</label>
-                    <input type="text" class="w100" id="othernames" >
-                </div>
-                <!-- gender -->
-                <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <select name="gender" id="gender">
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                    </select>
-                </div>
-                <!-- relationship status -->
-                <div class="form-group">
-                    <label for="status">Relationship Status</label>
-                    <select name="status" id="status">
-                        <option value="single">Single</option>
-                        <option value="Married">Married</option>
-                        <option value="Divorced">Divorced</option>
-                    </select>
-                </div>
-                <!-- username -->
-                <div class="form-group">
-                    <label for="username">Username </label>
-                    <input type="text" id="username" class="w100">
-                </div>
-                 <!-- Email -->
-                 <div class="form-group">
-                    <label for="email"> Email</label>
-                    <input type="email" id="email" class="w100">
-                </div>
-                <!-- password -->
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" class="w100">
-                </div>
+            <!-- checkbox -->
+            <div class="check-group">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement"> I agree to the <a href="#">terms of user</a></label>
+            </div>
                 
-                <!-- checkbox -->
-                <div class="check-group">
-                    <input type="checkbox" name="agreement" id="agreement">
-                    <label for="agreement"> I agree to the <a href="#">terms of user</a></label>
-                </div>
-                    
-                <input type="submit" class="w100" value="Register">
-            </form>
-            <div class="login-invite">
-                <p>Already registered? <a href="login.html">Login</a></p>
-            </div>
-        </main>
-      
-        <div class="design-container">
-    
+            <input type="submit" class="w100" value="Register">
+        </form>
+        <div class="login-invite">
+            <p>Already registered? <a href="login.html">Login</a></p>
         </div>
-        <div class="design-container2">
+    </main>     
     
-            </div>
+    <div class="design-container">
+        <div class="heart-designs" id= "heart-designs"></div>
+        <div class="circle-design"></div>
+    </div>
+
+    <script src="../js/design.js"></script>
 </body>
 </html>

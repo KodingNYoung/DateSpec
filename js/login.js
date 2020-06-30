@@ -17,6 +17,7 @@ const handleSubmit = async (e) => {
     // get the user credentials from the DB
     const userList = await getUserList();
     const users = await userList[0];
+    const emails = await userList[1];
     const  usernames = await userList[2];
 
     // get the username and password input
@@ -25,13 +26,13 @@ const handleSubmit = async (e) => {
 
     // console.log(usernameVal, passwordVal)
     // define booleans for login and valid usernames
-    let isValidUser = false, canLogin = false;  
+    let isValidUser = false, passedUser;  
     
-    // console.log(usernames)
-    // check if the username exists
-    usernames.forEach(username => {
-        if(username.toLowerCase() === usernameVal.toLowerCase()){
-            isValidUser = true;   
+    // loop through the users and check for the emails and username to get a match
+    users.forEach(user => {
+        if((user.email.toLowerCase() === usernameVal.toLowerCase()) || (user.username.toLowerCase() === usernameVal.toLowerCase())){
+            isValidUser = true;  
+            passedUser = user;
         }
     })
 
@@ -40,14 +41,11 @@ const handleSubmit = async (e) => {
 
     // if user is valid check the password
     if (isValidUser) {
-        // console.log("usernameVal: ",usernameVal)
-        
         //check through the list of users and see the password that matches with the username passed
         // first filter the array to return just the user with the passed username
-        let passedUser = users.filter(user => user.username === usernameVal.toLowerCase())
 
         // get the password and compare it with the password input
-        if (passedUser[0].password === passwordVal) {
+        if (passedUser.password === passwordVal) {
             // the user can login
             formUI.submit();
 
@@ -65,10 +63,8 @@ const handleSubmit = async (e) => {
         console.log("Username is wrong!")
     } 
 
-
     // clear password field
     passwordUI.value = "";
-    // console.log(userList);
 }
 
 // show message

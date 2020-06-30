@@ -60,7 +60,7 @@ header {
 }
 .login-form .row a,
 .registration-invite a {
-    color:rgb(177, 5, 5);
+    color:rgb(0, 26, 255);
     text-decoration: none;
     font-weight: bolder;
 }
@@ -85,47 +85,6 @@ header {
     margin: 10px 0;
 }
 
-.design-container {
-    background-color: #ffa3b4;
-    width: 100vw;
-    max-width: 1000px;
-    height: 100vw;
-    max-height: 1000px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    transform: translateX(50%) translateY(50%);
-
-}
-img{
-    width: 100%;
-}
-@media screen and (max-width:767px){
-    .background{
-        width: 2rem;
-        transform: translateX(-100%) translateY(50%);
-        position: fixed;
-    }
-    .background4{
-        width: 2rem;
-        transform: translateX(1200%) translateY(50%);
-        position: sticky;
-    }
-    .background3{
-        width: 2rem;
-        transform: translateX(500%) translateY(50%);
-    }
-    .background2{
-        width: 2rem;
-        transform: translateX(-200%) translateY(-500%);
-        
-    }
-    .background5{
-        width: 2rem;
-        transform: translateX(1500%) translateY(-700%);
-    }
-}
 @media screen and (max-width: 400px){
     .login-form .row {
         margin: 20px 0;
@@ -138,33 +97,6 @@ img{
     .login-form .row .retrieve-account {
         width: 100%;
         text-align: right;
-    }
-}
-@media screen and (min-width:768px){
-    .background{
-        width: 2rem;
-        transform: translateX(-500%) translateY(50%);
-    }
-    .background4{
-        width: 2rem;
-        transform: translateX(3000%) translateY(20%);
-        position: sticky;
-    }
-    .background2{
-        width: 2rem;
-        transform: translateX(-1000%) translateY(50%);
-    }
-    .background{
-        width: 2rem;
-        transform: translateX(-500%) translateY(50%);
-    }
-    .background3{
-        width: 2rem;
-        transform: translateX(1000%) translateY(50%);
-    }
-    .background5{
-        width: 2rem;
-        transform: translateX(-1000%) translateY(-700%);  
     }
 }
 
